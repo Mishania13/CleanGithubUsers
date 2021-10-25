@@ -17,11 +17,10 @@ class ImageDataLoader {
     private init() {}
     //TODO: Chek is session wiht this url is running
     func loadImage(url: URL, _ complition: @escaping(Result<Data, Error>) -> Void) {
-        serialQueueForImagesData.sync(flags: .barrier) {
             if let imageData = self.loadedImages[url] {
                 complition(.success(imageData))
             }
-        }
+        
             let task = URLSession.shared.dataTask(with: url) {data, _, error in
                 if let data = data {
                     self.serialQueueForImagesData.sync(flags: .barrier) {

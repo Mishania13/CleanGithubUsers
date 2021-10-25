@@ -42,6 +42,7 @@ class UserDetailsViewController: UIViewController {
         }
         configureViews()
         showUserDetails()
+        
     }
 
     private func showUserDetails() {
