@@ -76,9 +76,11 @@ class UserTableViewCell: UITableViewCell {
 
 extension UserTableViewCell: UserCellDisplayLogic {
     func displayDefaultImage() {
-        userImageView.isHidden = false
-        activityIndicator.stopAnimating()
-        userImageView.image = UIImage(systemName: "nosign")
+        DispatchQueue.main.async {
+            self.userImageView.isHidden = false
+            self.activityIndicator.stopAnimating()
+            self.userImageView.image = UIImage(systemName: "nosign")
+        }
     }
 
 

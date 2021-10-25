@@ -5,7 +5,7 @@
 //  Created by Михаил Звягинцев on 22.10.2021.
 //
 
-import UIKit
+import Foundation
 
 class ImageDataLoader {
 
