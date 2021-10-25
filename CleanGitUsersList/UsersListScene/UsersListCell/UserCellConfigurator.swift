@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 final class UserCellConfigurator {
 
     static let shared = UserCellConfigurator()
