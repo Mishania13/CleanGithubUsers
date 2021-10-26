@@ -71,6 +71,7 @@ class UserTableViewCell: UITableViewCell {
         userImageView.image = nil
         activityIndicator.startAnimating()
         userImageView.isHidden = true
+        userImageURL = ""
     }
 }
 

@@ -20,6 +20,7 @@ protocol UsersListRouterInput {
 protocol UsersListDataPassing {
     
   var dataStore: UsersListDataStore? { get }
+    func showUserDetailViewController(at index: Int)
 }
 
 class UsersListRouter: UsersListRouterInput {
